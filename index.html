@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpportunityCard: papers, posts and discussion</title>
+<meta name="description" content="David Reinstein's proposal to let people prove a low income to a seller and get a lower price: the 2015 discussion paper, posts, The Conversation article, outside discussion, and the 2026 reassessment.">
+<link rel="canonical" href="https://daaronr.github.io/opportunitycard/">
+<meta property="og:title" content="OpportunityCard: papers, posts and discussion">
+<meta property="og:description" content="A proposal for voluntary, income-verified discounts. Everything public in one place, 2015 to 2026.">
+<meta property="og:url" content="https://daaronr.github.io/opportunitycard/">
+<style>
+  :root {
+    --bg:#fafaf7; --ink:#202925; --muted:#59675f; --accent:#17654e; --secondary:#8a4a2c;
+    --rule:#d5ddd7; --note:#eef3ef; --surface:#fff;
+    --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark) {
+    :root { --bg:#141d19; --ink:#e6ebe7; --muted:#abb8b0; --accent:#82c9ad; --secondary:#e2a07e; --rule:#314139; --note:#1c2822; --surface:#18221e; }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:1.06rem/1.65 var(--serif); }
+  a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px; }
+  a:hover { text-decoration-thickness:2px; }
+  :focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  .skip { position:absolute; left:-9999px; top:.5rem; z-index:10; padding:.6rem .8rem; background:var(--surface); font-family:var(--sans); }
+  .skip:focus { left:.5rem; }
+  main { max-width:47rem; margin:0 auto; padding:2.4rem 1rem 5rem; }
+  @media (min-width:560px) { main { padding-left:1.25rem; padding-right:1.25rem; } }
+  .project-nav { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem 1rem; margin:0 0 3rem; padding-bottom:.8rem; border-bottom:1px solid var(--rule); color:var(--muted); font:600 .8rem/1.4 var(--sans); }
+  .project-nav a { color:var(--muted); }
+  .project-nav .links { display:flex; flex-wrap:wrap; gap:.4rem 1rem; }
+  h1 { margin:0 0 .7rem; font-size:clamp(2.4rem,8vw,3.6rem); line-height:1.02; font-weight:700; letter-spacing:-.01em; }
+  .standfirst { max-width:39rem; margin:0 0 1.5rem; color:var(--muted); font-size:1.25rem; line-height:1.5; }
+  .annotation-signpost { margin:0 0 2.4rem; padding:.9rem 1rem; border:1px solid var(--rule); border-left:3px solid var(--accent); background:var(--note); color:var(--muted); font-size:.95rem; }
+  .annotation-signpost strong { color:var(--ink); }
+  h2 { margin:3.2rem 0 .85rem; font-size:1.55rem; line-height:1.2; }
+  h2::before { content:""; display:block; width:2.4rem; margin-bottom:.9rem; border-top:2px solid var(--accent); }
+  p { margin:0 0 1.05rem; }
+  .current { display:block; margin:1.3rem 0 .6rem; padding:1.1rem 1.2rem; border:1px solid var(--rule); border-top:3px solid var(--accent); background:var(--surface); color:var(--ink); text-decoration:none; }
+  .current strong { display:block; margin-bottom:.3rem; color:var(--accent); font-size:1.2rem; }
+  .current span { display:block; color:var(--muted); font-size:.97rem; }
+  .current:hover strong { text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; }
+  .timeline { margin:1.3rem 0; padding:0; list-style:none; border-top:1px solid var(--rule); }
+  .timeline li { display:grid; grid-template-columns:7.5rem 1fr; gap:1rem; padding:1.05rem 0; border-bottom:1px solid var(--rule); margin:0; }
+  .timeline time { padding-top:.2rem; color:var(--secondary); font:700 .78rem/1.35 var(--sans); }
+  .timeline p { margin:0; }
+  .timeline .what { display:block; margin-bottom:.2rem; font-weight:700; }
+  .timeline .detail { color:var(--muted); font-size:.95rem; }
+  .timeline .links { margin-top:.35rem; font:600 .85rem/1.5 var(--sans); }
+  .timeline .links a + a { margin-left:.9rem; }
+  .small { color:var(--muted); font-size:.95rem; }
+  footer { margin-top:3.5rem; padding-top:1.2rem; border-top:1px solid var(--rule); color:var(--muted); font:400 .88rem/1.6 var(--sans); }
+  footer p { margin:0 0 .3rem; }
+  @media (max-width:560px) {
+    main { padding-top:1.5rem; }
+    .project-nav { margin-bottom:2.2rem; }
+    .timeline li { grid-template-columns:1fr; gap:.25rem; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main id="content">
+  <nav class="project-nav" aria-label="OpportunityCard pages">
+    <span>OpportunityCard</span>
+    <span class="links"><a href="https://opportunitycard-ten-years-on.netlify.app/">Ten years on (2026)</a><a href="https://opportunitycard-ten-years-on.netlify.app/technical/">Technical appendix</a></span>
+  </nav>
+
+  <h1>OpportunityCard</h1>
+  <p class="standfirst">A proposal to let people prove a low income to a seller and get a lower price. I've worked on it on and off since 2008. This page collects the public papers, posts and discussion in one place.</p>
+  <div class="annotation-signpost"><strong>Comments welcome.</strong> Select any passage to annotate it with Hypothes.is, or open the panel at the right edge. Or email <a href="mailto:daaronr@gmail.com?subject=OpportunityCard">daaronr@gmail.com</a>.</div>
+
+  <section aria-labelledby="idea">
+    <h2 id="idea">The idea</h2>
+    <p>Governments know people's incomes. Sellers mostly don't, so they decide who gets a discount using cruder signals: age, student status, location, purchase history. An OpportunityCard would let a customer who chooses to certify that their income is below a threshold. The seller gets a yes-or-no answer, not tax records, and can offer a posted discount to people who show the card.</p>
+    <p>The appeal is that it could reduce consumption inequality through markets rather than through taxes and spending. The catch is that the welfare effects are theoretically ambiguous. A verified low-income group can expand trade and reduce the hassles and deliberately worse "budget" versions firms use to keep better-off buyers from taking discounts. It can also let firms extract more surplus or raise the standard price. That's why I've argued for testing it before anything larger.</p>
+  </section>
+
+  <section aria-labelledby="now">
+    <h2 id="now">Where it stands now</h2>
+    <a class="current" href="https://opportunitycard-ten-years-on.netlify.app/">
+      <strong>The OpportunityCard, ten years on</strong>
+      <span>A reassessment and research agenda (July 2026). The verification tools the 2015 proposal lacked now exist, and related discounts already run at scale, such as UK social broadband tariffs checked against benefit records and Brazil's automatic enrollment in its electricity social tariff. My current view: pin down the remaining theoretical problem and audit the available administrative data before anyone proposes a general rollout.</span>
+    </a>
+    <p class="small">The <a href="https://opportunitycard-ten-years-on.netlify.app/technical/">technical appendix</a> covers the literature on third-degree price discrimination and the empirical openings in more detail.</p>
+  </section>
+
+  <section aria-labelledby="papers">
+    <h2 id="papers">Papers and posts</h2>
+    <ol class="timeline">
+      <li>
+        <time datetime="2015-09">Sept 2015</time>
+        <div>
+          <span class="what">The Government May Want to Encourage Price-Discrimination by Income</span>
+          <p class="detail">University of Essex, Department of Economics Discussion Paper No. 771. The short academic statement of the idea, with a proposed pilot field experiment.</p>
+          <p class="links"><a href="https://repository.essex.ac.uk/15616/1/dp771.pdf">PDF</a><a href="https://repository.essex.ac.uk/15616/">Essex repository</a><a href="https://ideas.repec.org/p/esx/essedp/15616.html">RePEc (IDEAS)</a></p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2015-09-11">Sept 2015</time>
+        <div>
+          <span class="what">Let Them Eat OpportunityCards</span>
+          <p class="detail">A shorter, less technical version of the paper, with Owen Southam. I also announced the paper and this version on my blog.</p>
+          <p class="links"><a href="https://docs.google.com/document/d/1M2VYFS0Uk6VYRHvONnSN3WORnp9Fqbg7K6RiduVjuHE/pub">Read it</a><a href="https://www.davidreinstein.org/posts/2015-09-11-let-them-eat-opportunitycards-a-new-policy-tool-that-may-reduce-inequality/">Blog post</a></p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2015-09-30">30 Sept 2015</time>
+        <div>
+          <span class="what">Should we help companies tailor prices to your wage packet?</span>
+          <p class="detail">The Conversation. With Owen Southam, with contributions from Rasif Alakbarov and Harry Masters. The version for a general audience, built around a bus-stop example.</p>
+          <p class="links"><a href="https://theconversation.com/should-we-help-companies-tailor-prices-to-your-wage-packet-47719">The Conversation</a><a href="https://www.davidreinstein.org/posts/2015-09-30-article-in-theconversation/">My note on writing it</a></p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2015">2015</time>
+        <div>
+          <span class="what">OpportunityCard: an example</span>
+          <p class="detail">A worked bus-fare example showing when income-based fares raise total welfare by filling more seats, and when they misallocate seats to people who value them less. With Owen Southam, Harry Masters and Rasif Alakbarov.</p>
+          <p class="links"><a href="https://docs.google.com/document/d/16jos_PT9w1wGpyD5A8ZiWJ9HW6kaLOJH6EWc_AYWnkk/pub">Read it</a></p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-07">July 2026</time>
+        <div>
+          <span class="what">The OpportunityCard, ten years on</span>
+          <p class="detail">What changed since 2015, the current evidence, a research agenda, and rules a responsible scheme would need.</p>
+          <p class="links"><a href="https://opportunitycard-ten-years-on.netlify.app/">Read it</a><a href="https://opportunitycard-ten-years-on.netlify.app/technical/">Technical appendix</a></p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="discussion">
+    <h2 id="discussion">Discussion by others</h2>
+    <ol class="timeline">
+      <li>
+        <time datetime="2026-01">Jan 2026</time>
+        <div>
+          <span class="what">Redistribution at the cash register</span>
+          <p class="detail">ABB, NONV (Substack), in a "31 Days of Policy" series. Walks through the proposal and its practical hurdles, such as sellers needing everyone to show a card, and income being a rough proxy for willingness to pay. Concludes it's worth experimenting with.</p>
+          <p class="links"><a href="https://nonv.substack.com/p/redistribution-at-the-cash-register">Read it</a></p>
+        </div>
+      </li>
+    </ol>
+    <p class="small">If you've written about the OpportunityCard, or know of discussion I've missed, please tell me and I'll add it here.</p>
+  </section>
+
+  <section aria-labelledby="involved">
+    <h2 id="involved">Taking it further</h2>
+    <p>I'd like to hear from people who could take this further: theorists working on price discrimination with verified group membership, anyone with access to data on social tariffs or benefit-linked discounts, and people working on surveillance-pricing rules or digital ID. I can share the organized project archive and help scope an extension or an empirical study. Email <a href="mailto:daaronr@gmail.com?subject=OpportunityCard">daaronr@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>David Reinstein, <a href="https://www.davidreinstein.org/">davidreinstein.org</a>. <a href="https://projects.davidreinstein.org/">More projects by David Reinstein</a>.</p>
+    <p>Comments on this page are public through Hypothes.is. Source: <a href="https://github.com/daaronr/opportunitycard">github.com/daaronr/opportunitycard</a>.</p>
+  </footer>
+</main>
+<script src="https://hypothes.is/embed.js" async></script>
+</body>
+</html>
